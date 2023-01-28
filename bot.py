@@ -29,10 +29,3 @@ if __name__ == "__main__":
         print(success_prompt)
     except Exception as e:
         print(e)
-    
-    
-
-    
-
-
-
