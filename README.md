@@ -22,7 +22,7 @@ ProCity Updates is a Twitter Bot designed to tweet out a graphic for the top 10 
  Web scraping is the process of using bots to extract content and data from a website. There was no initial content for data extraction. So the easiest path is to check the XHR calls in the network tab in devTools and look for some content in each request.<br><br>
  We used [Insomnia](https://insomnia.rest/) to automate this process.<br>
 
- ![insomnia dashboard](images\insomnia.png)
+ ![insomnia dashboard](https://github.com/niyarrbarman/procity-twt-bot/blob/main/images/insomnia.png)
  ## Table Generation
  We cleaned the JSON file we received from Insomnia and then using <code>pandas</code> library we created the 'Top 10' table. We used <code>pandas.style</code> for the graphic. 
  ## Tweepy
