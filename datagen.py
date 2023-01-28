@@ -34,7 +34,7 @@ class dataGen:
         data_df.rename(columns={'level_0' : 'Rank'}, inplace=True)
         data_df['Rank'] += 1
         data_df = data_df.drop(['index', 'rank', 'id', 'data'], axis = 1)
-        df_styled = data_df.style.format({'MMR' : '{:20.2f}'}).hide_index().set_properties(subset=data_df.columns, **{'text-align': 'center'}).set_properties(subset=data_df.columns, **{'width': '90px', 'height': '10px'}).set_table_styles(self.styles).background_gradient(cmap='Blues')
+        df_styled = data_df.style.format({'MMR' : '{:20.2f}'}).hide_index().set_properties(subset=data_df.columns, **{'text-align': 'center'}).set_properties(subset=data_df.columns, **{'width': '60px', 'height': '10px'}).set_table_styles(self.styles).background_gradient(cmap='Blues')
         dfi.export(df_styled, 'table.png', table_conversion='chrome')
         return df_styled
 
